@@ -1,5 +1,11 @@
 name: uniswap_swaps_eth_usdc
 migrations:
+  - name: create_table
+    sql: |
+      CREATE TABLE IF NOT EXISTS uniswap_preprocessor (
+        ts BIGINT,
+        y INT
+      )
   - name: create_view
     sql: |
       CREATE VIEW uniswap_v3_swaps_eth_usdc AS (
