@@ -1,0 +1,13 @@
+name: dataset0000
+migrations:
+  - name: create_table
+    sql: |
+      CREATE TABLE IF NOT EXISTS dataset0000 (
+        ts BIGINT,
+        y INT
+      )
+  - name: create_view
+    sql: |
+      CREATE VIEW dataset0000_view AS (
+        SELECT * FROM dataset0000
+      )
