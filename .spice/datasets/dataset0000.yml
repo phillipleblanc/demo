@@ -8,6 +8,6 @@ migrations:
       )
   - name: create_view
     sql: |
-      CREATE VIEW dataset0000_view AS (
+      CREATE OR REPLACE VIEW dataset0000_view AS (
         SELECT * FROM dataset0000
       )
