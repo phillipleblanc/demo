@@ -4,7 +4,7 @@ from spicepy import Client
 import duckdb
 
 def init_accumulator(duckdb: duckdb.DuckDBPyConnection):
-  duckdb.sql("CREATE TABLE IF NOT EXISTS seen_eigenpods (num int)").df()
+  duckdb.sql("CREATE TABLE IF NOT EXISTS seen_eigenpods (num int)")
   existing_eigenpods_df = duckdb.sql("SELECT num from seen_eigenpods").df()
   if existing_eigenpods_df.empty:
     duckdb.sql("INSERT INTO seen_eigenpods VALUES (0)")
