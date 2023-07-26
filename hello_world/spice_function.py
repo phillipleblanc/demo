@@ -1,3 +1,6 @@
+import duckdb
+import spicepy
+
 def process(context: dict, 
             duckdb: duckdb.DuckDBPyConnection, 
             spice_client: spicepy.Client):
