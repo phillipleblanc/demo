@@ -1,0 +1,10 @@
+# hello_world/function.yaml
+output_dataset: hello_world
+# This will trigger the function to execute on every new Ethereum block.
+triggers:
+  - path: eth
+# This selects the runtime that will execute your code.
+runtime: python3.11
+# For Python, handler is [script_name].[method]
+# The below will invoke a method `process` in a file `spice_function.py`.
+handler: spice_function.process
