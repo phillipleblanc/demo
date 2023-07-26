@@ -10,4 +10,4 @@ def process(context: dict,
     greeting TEXT
     )""")
 
-  duckdb.sql(f"INSERT INTO output.hello_world VALUES ({context['block_number']}, 'Hello!'")
+  duckdb.sql(f"INSERT INTO output.hello_world VALUES ({context['block_number']}, 'Hello!')")
