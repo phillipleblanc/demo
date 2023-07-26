@@ -11,3 +11,5 @@ def process(context: dict,
     )""")
 
   duckdb.sql(f"INSERT INTO output.hello_world VALUES ({context['block_number']}, 'Hello!')")
+
+  print("Hello, World!")
