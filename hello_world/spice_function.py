@@ -15,8 +15,6 @@ def process(context: dict,
   w3 = Web3(Web3.HTTPProvider(f"https://data.spiceai.io/eth?api_key={api_key}"))
   print(f"The latest block number is {w3.eth.get_block_number()}")
 
-  raise ValueError('testing errors!')
-
   duckdb.sql(f"INSERT INTO output.hello_world VALUES ({context['block_number']}, 'Hello!')")
 
   print("Hello, World!")
