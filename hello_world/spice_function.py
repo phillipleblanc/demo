@@ -1,6 +1,6 @@
 import duckdb
 import spicepy
-import web3
+from web3 import Web3
 import os
 
 def process(context: dict, 
