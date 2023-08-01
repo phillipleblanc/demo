@@ -18,7 +18,7 @@ func ShareToUnderlying(ctx *function.FunctionCtx, duckDb *sql.DB, client *gospic
 	_, err := duckDb.ExecContext(ctx, `
 	CREATE TABLE IF NOT EXISTS output.strategy_manager_share_to_token (
 		block_number BIGINT PRIMARY KEY,
-		shares_to_underlying DOUBLE,
+		shares_to_underlying DOUBLE PRECISION,
 		strategy_address TEXT
 	);`)
 	if err != nil {
