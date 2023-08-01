@@ -14,7 +14,7 @@ func HelloWorldGo(ctx *function.FunctionCtx, duckDb *sql.DB, client *gospice.Spi
 	// Temporary step
 	_, err := duckDb.ExecContext(ctx, `
 	create table output.hello_world_golang (
-		block_number bigint
+		block_number bigint,
 		greeting TEXT
 	);`)
 	if err != nil {
