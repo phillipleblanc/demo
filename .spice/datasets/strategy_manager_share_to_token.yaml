@@ -5,6 +5,6 @@ migrations:
     sql: |
       CREATE TABLE IF NOT EXISTS strategy_manager_share_to_token (
         block_number BIGINT PRIMARY KEY,
-        shares_to_underlying DOUBLE,
+        shares_to_underlying DOUBLE PRECISION,
         strategy_address TEXT
       )
