@@ -1,0 +1,6 @@
+go 1.20
+
+use (
+	./hello_world_golang
+	./sm_sharesToUnderlying
+)

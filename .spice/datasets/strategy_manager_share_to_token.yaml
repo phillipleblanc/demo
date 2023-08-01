@@ -1,0 +1,10 @@
+name: strategy_manager_share_to_token
+type: append
+migrations:
+  - name: create_table
+    sql: |
+      CREATE TABLE IF NOT EXISTS strategy_manager_share_to_token (
+        block_number BIGINT PRIMARY KEY,
+        shares_to_underlying DOUBLE,
+        strategy_address TEXT
+      )
