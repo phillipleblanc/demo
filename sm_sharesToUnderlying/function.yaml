@@ -2,7 +2,7 @@
 output_dataset: strategy_manager_share_to_token
 # This will trigger the function to execute on every new Ethereum block.
 triggers:
-  - path: eth
+  - path: goerli
 # This selects the runtime that will execute your code.
 runtime: go1.x
 # For Golang, handler is [function_file].go
