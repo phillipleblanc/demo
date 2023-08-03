@@ -2,7 +2,10 @@ module hello_world_golang
 
 go 1.20
 
-require github.com/spiceai/gospice/v2 v2.1.1-0.20230801092714-d6487bedd79d
+require (
+	github.com/spiceai/gospice/v2 v2.1.1-0.20230801092714-d6487bedd79d
+	github.com/spiceai/spice-functions-go v0.1.0
+)
 
 require (
 	github.com/andybalholm/brotli v1.0.5 // indirect
@@ -16,7 +19,6 @@ require (
 	github.com/klauspost/asmfmt v1.3.2 // indirect
 	github.com/klauspost/compress v1.16.7 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.5 // indirect
-	github.com/kr/text v0.2.0 // indirect
 	github.com/marcboeker/go-duckdb v1.4.3 // indirect
 	github.com/minio/asm2plan9s v0.0.0-20200509001527-cdd76441f9d8 // indirect
 	github.com/minio/c2goasm v0.0.0-20190812172519-36a3d3bbc4f3 // indirect
@@ -32,5 +34,5 @@ require (
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20230731193218-e0aa005b6bdf // indirect
 	google.golang.org/grpc v1.57.0 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
-	gopkg.in/yaml.v2 v2.4.0 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
 )

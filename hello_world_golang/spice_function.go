@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/spiceai/gospice/v2"
-	"github.com/spiceai/gospice/v2/pkg/function"
+	"github.com/spiceai/spice-functions-go/function"
 )
 
 func HelloWorldGo(ctx *function.FunctionCtx, duckDb *sql.DB, client *gospice.SpiceClient) error {
@@ -30,5 +30,5 @@ func HelloWorldGo(ctx *function.FunctionCtx, duckDb *sql.DB, client *gospice.Spi
 }
 
 func main() {
-	function.RunFunction(HelloWorldGo)
+	function.Run(HelloWorldGo)
 }

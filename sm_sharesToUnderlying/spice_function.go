@@ -10,7 +10,7 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/ethereum/go-ethereum/rpc"
 	"github.com/spiceai/gospice/v2"
-	"github.com/spiceai/gospice/v2/pkg/function"
+	"github.com/spiceai/spice-functions-go/function"
 )
 
 func ShareToUnderlying(ctx *function.FunctionCtx, duckDb *sql.DB, client *gospice.SpiceClient) error {
@@ -63,5 +63,5 @@ func ShareToUnderlying(ctx *function.FunctionCtx, duckDb *sql.DB, client *gospic
 }
 
 func main() {
-	function.RunFunction(ShareToUnderlying)
+	function.Run(ShareToUnderlying)
 }
