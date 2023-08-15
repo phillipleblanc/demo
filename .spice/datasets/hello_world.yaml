@@ -1,7 +1,6 @@
 # .spice/datasets/hello_world.yml
-name: "@phillipleblanc".demo.hello_world
+name: '"@phillipleblanc".demo.hello_world'
 type: append
-Acceleration: {}
 migrations:
   - name: create_table
     sql: |
