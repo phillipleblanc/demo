@@ -1,4 +1,4 @@
-name: phillipleblanc.datasets.eth_aave_v2_collateral_updates
+name: phillipleblanc.demo.eth_aave_v2_collateral_updates
 description: Collateral updates for Aave V2 loan positions
 enabled: true
 type: blockchain
@@ -8,7 +8,7 @@ access:
 migrations:
   - name: create_table
     sql: |
-      CREATE TABLE IF NOT EXISTS phillipleblanc.datasets.eth_aave_v2_collateral_updates
+      CREATE TABLE IF NOT EXISTS phillipleblanc.demo.eth_aave_v2_collateral_updates
       (
         lending_pool_address text NOT NULL,
         user_address text NOT NULL,
