@@ -1,5 +1,6 @@
 # sm_sharesToUnderlying/function.yaml
-output_dataset: strategy_manager_share_to_token
+output_datasets: 
+  - phillipleblanc.demo.strategy_manager_share_to_token
 # This will trigger the function to execute on every new Ethereum block.
 triggers:
   - path: goerli
