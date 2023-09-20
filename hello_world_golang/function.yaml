@@ -1,5 +1,6 @@
 # hello_world_golang/function.yaml
-output_dataset: phillipleblanc.demo.hello_world_golang
+output_datasets: 
+ - phillipleblanc.demo.hello_world_golang
 # This will trigger the function to execute on every new Ethereum block.
 triggers:
   - path: eth
