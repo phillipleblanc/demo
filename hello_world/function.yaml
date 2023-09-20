@@ -1,5 +1,6 @@
 # hello_world/function.yaml
-output_dataset: hello_world
+output_datasets: 
+  - phillipleblanc.demo.hello_world
 # This will trigger the function to execute on every new Ethereum block.
 triggers:
   - path: eth
