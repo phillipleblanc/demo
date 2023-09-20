@@ -33,7 +33,6 @@ def process(context: dict,
   df = df.merge(pad_df, how="right", on="ts")
   df.sort_values("ts", inplace=True, ignore_index=True)
   df = df.interpolate(method="pad")
-  df = df.set_index('ts')
   print(df)
 
   duckdb.sql(f"INSERT INTO output.uniswap_v2_eth_usdc SELECT * FROM df")
