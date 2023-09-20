@@ -4,8 +4,6 @@ import numpy as np
 import pandas as pd
 import duckdb
 import spicepy
-from pathlib import Path
-from string import Template
 import sys
 import os
 
@@ -21,7 +19,7 @@ def process(context: dict,
   """
   reader = spice_client.query(query)
   df = reader.read_pandas()
-              
+
   if len(df) == 0:
       print("Skipping run due to no data")
       sys.exit(0)
