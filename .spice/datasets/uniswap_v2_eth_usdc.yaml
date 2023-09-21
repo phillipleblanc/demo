@@ -1,5 +1,8 @@
 name: phillipleblanc.demo.uniswap_v2_eth_usdc
 type: append
+access:
+  read: 
+    - "*" # Indicates a public view, everyone can read
 migrations:
   - name: create_table
     sql: |

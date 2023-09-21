@@ -1,6 +1,11 @@
 # .spice/datasets/hello_world_golang.yml
 name: phillipleblanc.demo.hello_world_golang
 type: append
+access:
+  read:
+    # Indicates a private view shared with the `ewgenius` & `spicehq` orgs
+    - ewgenius
+    - spicehq
 migrations:
   - name: create_table
     sql: |
