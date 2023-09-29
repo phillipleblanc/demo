@@ -1,0 +1,10 @@
+name: phillipleblanc.demo.notes
+type: view
+access:
+  read: 
+    - "*" # Indicates a public view, everyone can read
+migrations:
+  - name: create_view
+    sql: |
+      CREATE OR REPLACE VIEW phillipleblanc.demo.notes AS
+      SELECT notes FROM phillip_pg.public.test_records
