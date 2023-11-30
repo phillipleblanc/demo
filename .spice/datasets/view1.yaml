@@ -1,0 +1,7 @@
+name: phillipleblanc.demo.view1
+type: view
+migrations:
+  - name: create_view
+    sql: |
+      CREATE OR REPLACE VIEW phillipleblanc.demo.view1 AS
+      SELECT 1
