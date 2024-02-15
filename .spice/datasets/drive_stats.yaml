@@ -1,9 +1,9 @@
-name: drive_stats
+name: phillipleblanc.demo.drive_stats
 type: append
 migrations:
   - name: create_table
     sql: |
-      CREATE TABLE IF NOT EXISTS drive_stats (
+      CREATE TABLE IF NOT EXISTS "phillipleblanc".demo.drive_stats (
         value BIGINT,
         time_unix_nano BIGINT,
         start_time_unix_nano BIGINT,
